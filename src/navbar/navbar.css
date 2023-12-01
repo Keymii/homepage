@@ -1,0 +1,100 @@
+.navbar-container{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    font-size: 20px;
+    justify-content:left;
+    height: 70px;
+    background-color: #121212;
+}
+.navbar-container .name{
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:30px ;
+    font-size: 30px;
+    /* font-family:'Times New Roman', Times, serif; */
+    border-radius: 15px;
+    min-width: 100px;
+    max-width: 170px;  
+    position: relative;
+    margin-right: auto;
+}
+.navbar-link{
+    color: #aeaeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family:'Times New Roman', Times, serif; */
+    border-radius: 15px;
+    min-width: 100px;
+    max-width: 170px;  
+    position: relative;
+}
+.navbar-link:hover{
+    color: #fff;
+    /* background-color: #212121; */
+    /* box-shadow: #2a2a2a   0px 4px 10px; */
+    top:-5px;
+  
+}
+.navbar-toggle{
+    color: #aeaeae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family:'Times New Roman', Times, serif; */
+    border-radius: 15px;
+    min-width: 100px;
+    max-width: 170px;  
+    position: relative;
+}
+.navbar-toggle:hover {
+    color: #fff;
+    /* background-color: #212121; */
+    /* box-shadow: #2a2a2a   0px 4px 10px; */
+    animation: rotate 2s ease-in-out  infinite ;
+}
+/* .navbar-toggle:active{    animation: rotate 1sease-in-out infinite;
+} */
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+}
+.navbar-container .linkContainer{
+    display: flex;
+    flex-direction: row;
+    padding-right:50px ;
+    background-color: #121212;
+
+}
+.sideBar{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+@media (max-width:700px){
+    .navbar-container .linkContainer{
+        /* visibility: hidden; */
+        display: flex;
+        flex-direction: column;
+        padding-right:0 ;
+        height: 215px;
+    }
+    .navbar-container .linkContainer .navbar-link{
+        padding: 20px 30px 20px 30px;
+    }
+    .navbar-container  .navbar-toggle{
+        padding: 20px 30px 20px 30px;
+    }
+}

@@ -8,39 +8,6 @@ let maskPath="M23.8,-25.5C31.2,-22.1,37.8,-15,39.5,-6.7C41.3,1.6,38.3,10.9,33.5,
 
 function Homepage() {
     // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const shadowRef = useRef(null);
-    const shadowPosition = {x:43, y:43};
-    // const [centerX,setCenterX] = useState(0);
-    // const [centerY,setCenterY] =  useState(0);
-    // const [shadowPosition, setShadowPosition] = useState({x:0, y:0});
-
-    // useEffect(() => {
-    //     const handleMouseMove = (e) => {
-    //         const { left, top, width, height } = shadowRef.current.getBoundingClientRect();
-    //         const centerX = left + width / 2;
-    //         const centerY = top + height / 2;
-
-    //         setMousePosition({ x: e.clientX, y: e.clientY });
-    //         var shadowY = Math.max(Math.min(e.clientY-centerY,12),-12);
-    //         var shadowX = Math.max(Math.min(e.clientX-centerX,12),-12);
-    //         var circleFitFactor = ((shadowX**2 + shadowY**2)**0.5)/12;
-    //         // if (circleFitFactor>2){
-    //             shadowX = 12;
-    //             shadowY = 12;
-    //         // }
-    //         setShadowPosition({x:shadowX, y:shadowY});
-    //     };
-
-
-
-    //     document.addEventListener('mousemove', handleMouseMove);
-
-    //     return () => {
-    //         document.removeEventListener('mousemove', handleMouseMove);
-    //     };
-    // }, []);
-    
-
   return (
     <div className="homepage">
         <div>
@@ -50,7 +17,7 @@ function Homepage() {
                 </div>
                 <div className="right">
                     <div>
-                    <div className="masked-image" ref={shadowRef} >
+                    <div className="masked-image"  >
                         <svg
                         id="sw-js-blob-svg"
                         viewBox="0 0 100 100"
